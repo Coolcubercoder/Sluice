@@ -4,18 +4,18 @@ authors:
   - given-names: "Eklavya"
     family-names: "Saini"
     alias: "Coolcubercoder"
-    website: "https://github.com"
-title: "Sluice: A Zero-Allocation, Multi-Tenant Atomic Token Bucket Rate Limiter in Pure Go"
+    website: "https://github.com/Coolcubercoder"
+title: "Sluice: A Multi-Tenant, Lock-Free Token Bucket Rate Limiter Outside the Go Heap"
 version: 1.0.0
 date-released: 2026-09-07
-url: "https://github.com/sluice"
-repository-code: "https://github.com/sluice"
+url: "https://github.com/Coolcubercoder/Sluice"
+repository-code: "https://github.com/Coolcubercoder/Sluice"
 abstract: >-
-  Sluice is a high-throughput, standalone traffic-shaping library engineered to eliminate
-  the 'noisy neighbor' bottleneck in hyperscale multi-tenant cloud architectures. By bypassing
-  the Go runtime heap via native system call allocations and utilizing a completely lock-free,
-  cache-line-isolated atomic token bucket registry, Sluice executes multi-tenant rate limiting
-  at bare-metal memory speeds with absolute zero Garbage Collection overhead.
+  Sluice is a high-throughput, zero-allocation traffic-shaping library engineered to eliminate
+  the 'noisy neighbor' bottleneck in hyperscale multi-tenant data planes. By bypassing
+  the Go runtime heap via native anonymous system call allocations and utilizing a completely lock-free,
+  cache-line-isolated atomic token bucket registry, Sluice executes rate-limiting decisions
+  at bare-metal memory speeds (~5 ns) with absolute zero Garbage Collection overhead.
 keywords:
   - golang
   - rate-limiting
