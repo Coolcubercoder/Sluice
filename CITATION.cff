@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this ultra-low-latency traffic shaping engine in your infrastructure research or production systems, please cite it as below."
+authors:
+  - given-names: "Eklavya"
+    family-names: "Saini"
+    alias: "Coolcubercoder"
+    website: "https://github.com"
+title: "Sluice: A Zero-Allocation, Multi-Tenant Atomic Token Bucket Rate Limiter in Pure Go"
+version: 1.0.0
+date-released: 2026-09-07
+url: "https://github.com/sluice"
+repository-code: "https://github.com/sluice"
+abstract: >-
+  Sluice is a high-throughput, standalone traffic-shaping library engineered to eliminate
+  the 'noisy neighbor' bottleneck in hyperscale multi-tenant cloud architectures. By bypassing
+  the Go runtime heap via native system call allocations and utilizing a completely lock-free,
+  cache-line-isolated atomic token bucket registry, Sluice executes multi-tenant rate limiting
+  at bare-metal memory speeds with absolute zero Garbage Collection overhead.
+keywords:
+  - golang
+  - rate-limiting
+  - lock-free
+  - atomic
+  - off-heap
+  - zero-allocation
+  - low-latency
+  - cloud-infrastructure
+license: MIT
